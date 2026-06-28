@@ -1,56 +1,119 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MLS Digital</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MLS Digital - Agence Digitale</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #0f172a;
+      color: white;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 50px;
+      background: #111827;
+    }
+
+    header h1 {
+      color: #38bdf8;
+      font-size: 20px;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 100px 20px;
+    }
+
+    .hero h2 {
+      font-size: 40px;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 18px;
+      color: #cbd5e1;
+    }
+
+    .btn {
+      margin-top: 20px;
+      display: inline-block;
+      padding: 12px 25px;
+      background: #38bdf8;
+      color: black;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+    }
+
+    section {
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      margin-top: 30px;
+    }
+
+    .card {
+      background: #1e293b;
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #111827;
+      margin-top: 40px;
+    }
+  </style>
 </head>
+
 <body>
 
-<header>
+  <header>
     <h1>MLS Digital</h1>
-    <p>Votre partenaire pour la transformation numérique.</p>
-</header>
+    <nav>
+      <a href="#services" style="color:white; margin-right:15px;">Services</a>
+      <a href="#contact" style="color:white;">Contact</a>
+    </nav>
+  </header>
 
-<nav>
-    <a href="#accueil">Accueil</a>
-    <a href="#services">Services</a>
-    <a href="#apropos">À propos</a>
-    <a href="#contact">Contact</a>
-</nav>
+  <div class="hero">
+    <h2>Agence Digitale Moderne</h2>
+    <p>Nous créons des sites web professionnels et des solutions digitales performantes.</p>
+    <a class="btn" href="#contact">Nous contacter</a>
+  </div>
 
-<section id="accueil">
-    <h2>Bienvenue chez MLS Digital</h2>
-    <p>Nous créons des sites web modernes et des solutions numériques adaptées à vos besoins.</p>
-</section>
+  <section id="services">
+    <h2>Nos Services</h2>
 
-<section id="services">
-    <h2>Nos services</h2>
-    <ul>
-        <li>Création de sites web</li>
-        <li>Développement d'applications</li>
-        <li>Marketing digital</li>
-        <li>Maintenance informatique</li>
-    </ul>
-</section>
+    <div class="services">
+      <div class="card">Création de sites web</div>
+      <div class="card">Design UI/UX</div>
+      <div class="card">Marketing digital</div>
+      <div class="card">Gestion réseaux sociaux</div>
+    </div>
+  </section>
 
-<section id="apropos">
-    <h2>À propos</h2>
-    <p>MLS Digital accompagne les particuliers et les entreprises dans leur développement numérique.</p>
-</section>
-
-<section id="contact">
+  <section id="contact">
     <h2>Contact</h2>
-    <p>Email : contact@mlsdigital.com</p>
-    <p>Téléphone : +243 XXX XXX XXX</p>
-</section>
+    <p>WhatsApp : +XX XXX XXX XXX</p>
+  </section>
 
-<footer>
-    <p>© 2026 MLS Digital - Tous droits réservés.</p>
-</footer>
-
-<script src="script.js"></script>
+  <footer>
+    © 2026 MLS Digital - Tous droits réservés
+  </footer>
 
 </body>
 </html>
