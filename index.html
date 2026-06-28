@@ -23,7 +23,21 @@
   border-radius: 8px;
   font-weight: bold;
   transition: 0.3s ease;
-}
+}@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+  }
+
+  .hero h2 {
+    font-size: 28px;
+  }
+
+  .services {
+    grid-template-columns: 1fr;
+  }
+    }
 
 .btn:hover {
   background: #0ea5e9;
@@ -40,18 +54,16 @@
   background: #273449;
 }
 
-    header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 20px 50px;
-      background: #111827;
-    }
+    <header>
+  <h1>🚀 MLS Digital</h1>
 
-    header h1 {
-      color: #38bdf8;
-      font-size: 20px;
-    }
+  <nav>
+    <a href="#about" style="color:white; margin-right:15px;">À propos</a>
+    <a href="#services" style="color:white; margin-right:15px;">Services</a>
+    <a href="#portfolio" style="color:white; margin-right:15px;">Portfolio</a>
+    <a href="#contact" style="color:white;">Contact</a>
+  </nav>
+</header>
 
     .hero {
       text-align: center;
@@ -101,11 +113,11 @@
   <h2>Portfolio</h2>
 
   <div class="services">
-    <div class="card">Site vitrine entreprise</div>
-    <div class="card">Landing page marketing</div>
-    <div class="card">Portfolio personnel</div>
-    <div class="card">E-commerce simple</div>
-  </div>
+  <div class="card">🌐 Création de sites web modernes</div>
+  <div class="card">🎨 Design UI/UX professionnel</div>
+  <div class="card">📈 Marketing digital & réseaux sociaux</div>
+  <div class="card">⚡ Optimisation & performance web</div>
+</div>
 </section>
     .card {
       background: #1e293b;
