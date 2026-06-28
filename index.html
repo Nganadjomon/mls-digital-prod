@@ -22,6 +22,21 @@
   align-items: center;
   text-decoration: none;
   z-index: 1000;
+}form {
+  max-width: 500px;
+  margin: auto;
+}
+
+input, textarea {
+  border: none;
+  border-radius: 8px;
+  background: #1e293b;
+  color: white;
+}
+
+textarea {
+  height: 120px;
+  resize: none;
 }
 
 .whatsapp-float:hover {
@@ -199,7 +214,7 @@
     </div>
   </section>
 
-  <section id="contact">
+  <<section id="contact">
   <h2>Contact</h2>
 
   <p>Contactez-nous directement sur WhatsApp 👇</p>
@@ -207,3 +222,13 @@
   <a class="btn" href="https://wa.me/2250586834108" target="_blank">
     Nous écrire sur WhatsApp
   </a>
+
+  <h3 style="margin-top:30px;">Ou envoyez un message</h3>
+
+  <form>
+    <input type="text" placeholder="Votre nom" required style="width:100%; padding:10px; margin:5px 0;">
+    <input type="email" placeholder="Votre email" required style="width:100%; padding:10px; margin:5px 0;">
+    <textarea placeholder="Votre message" required style="width:100%; padding:10px; margin:5px 0;"></textarea>
+    <button type="submit" class="btn">Envoyer</button>
+  </form>
+</section>
